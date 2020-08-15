@@ -20,5 +20,3 @@ const instanceB = singleTon.getInstance();
 console.log(instanceB);
 
 console.log("COMPARE", instanceA === instanceB);
-
-// console.log("COMPARE", instanceA === instanceB);
