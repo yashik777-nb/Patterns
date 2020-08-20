@@ -12,10 +12,8 @@ class EventObserver {
     /* Filter out from the list whatever matches the callback function. 
       If there is no match, the callback gets to stay on the list. The filter returns a new list and re-assigns 
       the list of observers. */
-    this.observers = this.observers.filter(function (item) {
-      if (item != fn) {
-        return item;
-      }
+    this.observers = this.observers.filter((item) => {
+      if (item != fn) return item;
     });
     console.log(`You are now unsubscribed from ${fn.name}`);
   }
